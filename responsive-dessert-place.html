@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./responsive-css.css">
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+  <title>Dessert Paradise</title>
+</head>
+
+<body>
+  <div class="wrapper">
+  	<div class="top">
+  	  <div class="side side1">
+  	    <p class="price">$2.99</p>
+  	    <p>Strawberry Mousse</p>
+  	  </div>
+  	  <div class="side side2">
+  	    <p class="price">$3.49</p>
+  	    <p>Princess Cake</p>
+  	  </div>
+  	  <header class="header">
+  	    <h1>Champagne Bakery</h1>
+  	    <p>Delicious Desserts!</p>
+  	  </header>
+    </div>
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li><a href="">Pastry</a></li>
+        <li><a href="">Cake</a></li>
+        <li><a href="">Panini</a></li>
+        <li><a href="">Croissant</a></li>
+        <li><a href="">Beverages</a></li>
+      </ul>
+    </nav>
+    <section class="features">
+      <div class="feature">
+        <h3><i class="fas fa-coffee"></i></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <h3><i class="fas fa-wine-glass"></i></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <h3><i class="fas fa-music"></i></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <h3><i class="fab fa-pagelines"></i></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>  
+    <section class="gallery">
+      <h2>Insta Pics</h2>
+      <img src="https://source.unsplash.com/random/201x201" alt="">
+      <img src="https://source.unsplash.com/random/202x202" alt="">
+      <img src="https://source.unsplash.com/random/203x201" alt="">
+      <img src="https://source.unsplash.com/random/201x203" alt="">
+      <img src="https://source.unsplash.com/random/201x204" alt="">
+      <img src="https://source.unsplash.com/random/201x205" alt="">
+      <img src="https://source.unsplash.com/random/204x205" alt="">
+      <img src="https://source.unsplash.com/random/202x203" alt="">
+      <img src="https://source.unsplash.com/random/204x205" alt="">
+      <img src="https://source.unsplash.com/random/204x204" alt="">
+    </section>
+  </div>
+  <script type="text/javascript">
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({target}) {
+      const expandAttr = target.getAttribute('aria-expanded') === 'true' || false;
+      console.log(expandAttr);
+      navButton.setAttribute('aria-expanded', !expandAttr);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
